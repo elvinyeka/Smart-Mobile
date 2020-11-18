@@ -1,0 +1,29 @@
+.header-nav-wrapper {
+    margin-top: 0;
+    background-color: #E0E0E0;
+}
+
+.header-nav {
+    height: 61px;
+    background-color: #E0E0E0;
+    margin-left: 90px;
+    padding-left: 48px;
+    padding-right: 38px;
+    display: flex;
+    align-items: center;
+}
+
+.header-nav_link {
+    color: #575757;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1;
+    text-decoration: none;
+    width: 100%;
+    padding: 20px;
+    transition-duration: 0.5s;
+    &:hover {
+        background-color: $hoverRed;
+        color: #E0E0E0
+    }
+}

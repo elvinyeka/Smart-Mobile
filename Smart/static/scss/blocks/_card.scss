@@ -1,0 +1,88 @@
+.cards-wrapper {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    &>*:not(:nth-child(3n)) {
+        margin-right: 30px;
+    }
+}
+
+.card {
+    @extend %mixin-card;
+    padding: 20px;
+    margin-bottom: 15px;
+    width: 255px;
+    transition-duration: 0.5s;
+    &:hover {
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+        transform: translate(-5px, -5px);
+    }
+    &:last-child {
+        margin-left: 0;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+.card_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.card_icon-btn {
+    padding: 0;
+    background: transparent;
+    border: none;
+    padding: 5px 10px;
+    font-size: 25px;
+    color: $gray;
+    transition-duration: 0.5s;
+    &:hover {
+        background-color: $gray;
+        border-radius: 3px;
+        color: red;
+    }
+    &+& {
+        margin-left: 25px;
+    }
+    &:focus {
+        outline: none;
+    }
+}
+
+.card-img {
+    width: 100%;
+    //height: 200px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.card-title {
+    margin-bottom: 20px;
+    color: $blackGray;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.43;
+    text-align: center;
+}
+
+.card-price {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: $blackGray;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.43;
+    margin-bottom: 10px;
+}
+
+.card-price-icon {
+    margin-left: 5px;
+    width: 20px;
+    height: 15px;
+}

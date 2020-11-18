@@ -1,0 +1,107 @@
+.compare-title {
+    font-size: 25px;
+    color: #333333;
+    padding: 25px;
+}
+
+.compare-candidates {
+    display: flex;
+    position: relative;
+    margin-left: 120px;
+}
+
+.compare-candidate {
+    border-left: 1px solid gray;
+    background-color: #ffffff;
+    padding-bottom: 20px;
+    margin-left: 100px;
+}
+
+.candidate-search {
+    padding: 5px;
+    margin: 0 10px 15px;
+    position: relative;
+}
+
+.candidate-search form {
+    white-space: nowrap;
+}
+
+.comp-input {
+    padding: 3px 0;
+    margin-right: 5px;
+    margin-top: 1px;
+    margin-left: 4px;
+    width: 173px;
+    &:focus {
+        outline: none;
+    }
+}
+
+.comp-button {
+    width: 72px;
+    padding: 4px 11px;
+    background-color: #ffffff;
+    border: 1px solid #b7b7b7;
+    cursor: pointer;
+    &:focus {
+        outline: none;
+    }
+    &:hover {
+        background-color: $hoverRed;
+        color: #ffffff;
+    }
+}
+
+.comp-input-title {
+    text-align: center;
+    font-size: 21px;
+    padding: 0 10px 10px;
+    width: 100%;
+}
+
+.comp-input-title a {
+    color: #333333;
+    text-decoration: none;
+}
+
+.compare-media {
+    display: flex;
+    justify-content: center;
+    margin: 10px auto 20px;
+}
+
+.compare-candidate span {
+    margin-left: 90px;
+    font-size: 20px;
+}
+
+.compare-carackteristic {
+    height: 650px;
+    margin-left: 20px;
+}
+
+.compare-spesifications {
+    color: #333333;
+    padding-left: 10px;
+}
+
+.comp-field-name {
+    width: 188px;
+    padding: 5px 10px;
+    color: #464343;
+    font-weight: 900;
+    background: #f9f9f9;
+    border-bottom: 1px solid #dddfe2;
+}
+
+.comp-field-value {
+    width: 386px;
+    padding: 5px 10px;
+    color: #464343;
+    background: #f9f9f9;
+    border-bottom: 1px solid #dddfe2;
+    &:last-child {
+        width: 290px;
+    }
+}

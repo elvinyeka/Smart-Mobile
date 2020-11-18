@@ -1,0 +1,89 @@
+.container-form {
+    margin-top: 50px;
+    height: 100%;
+}
+
+.signup-form {
+    width: 450px;
+    background-color: rgba(97, 97, 97, 0.7);
+    margin: 110px auto;
+    text-align: center;
+    border-radius: 4px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.7);
+    padding-bottom: 20px;
+}
+
+.signup-form img {
+    width: 120px;
+    height: 120px;
+    margin: -60px 0 30px 0;
+    border: 3px solid $gray;
+    border-radius: 50%;
+    background-color: #b9a4a4;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.7);
+}
+
+.signup-form input {
+    width: 300px;
+    height: 50px;
+    font-size: 18px;
+    margin-bottom: 25px;
+    border-radius: 4px;
+    padding-left: 20px;
+    border: none;
+    &:focus {
+        outline: none;
+    }
+    &:hover {
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+    }
+}
+
+.signup-submit {
+    padding: 13px 30px;
+    margin: 5px 0;
+    font-size: 18px;
+    color: #fafafa;
+    background-color: #4e4d4d;
+    border: none;
+    border-radius: 4px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    letter-spacing: 2px;
+    cursor: pointer;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+    &:hover {
+        transition: all 0.3s;
+        background-color: #f6f7e9;
+        color: #4e4d4d;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.8);
+    }
+    &:focus {
+        outline: none;
+    }
+}
+
+.sosial i {
+    color: #f6f7e9;
+    font-size: 30px;
+    padding: 10px;
+}
+
+.sosial button {
+    width: 100px;
+    background-color: #4e4d4d;
+    margin-top: 10px;
+    margin-left: 5px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    &:hover {
+        transition: all 0.3s;
+        background-color: #888888;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.8);
+    }
+    &:focus {
+        outline: none;
+    }
+}

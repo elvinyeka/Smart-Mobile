@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <main class="main-content">
+        <div class="container-form">
+            <form method="POST" action="" class="signup-form ">
+                {{ form.hidden_tag() }}
+                <img src="/static/img/users/users.png" alt="">
+                <div class="sigup-input">
+                    {{ form.email(placeholder='Email') }}
+                </div>
+                <div class="sigup-input">
+                    {{ form.password1(placeholder='Şifrə') }}
+                </div>
+                {{ form.submit(value='Giriş et', class='signup-submit') }}
+                <div class="sosial">
+                    <button><i class="fab fa-google"></i></button>
+                    <button><i class="fab fa-facebook"></i></button>
+                </div>
+            </form>
+
+        </div>
+
+
+    </main>
+
+
+
+
+{% endblock content %}

@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <main class="main-content">
+        <div class="container-form">
+            <form class="signup-form ">
+                <img src="/static/img/users/users.png" alt="">
+                <div class="sigup-input">
+                    <input type="text" required name="username" placeholder="Istifadəçi adı">
+                </div>
+                <div class="sigup-input">
+                    <input type="email" required name="email" placeholder="Email">
+                </div>
+                <div class="sigup-input">
+                    <input type="password" required name="password" placeholder="Şifrə">
+                </div>
+                <div class="sigup-input">
+                    <input type="password" required name="password" placeholder="Şifrə təkrar">
+                </div>
+                <input class="signup-submit"  type="submit" value="Hesab Yarat">
+                <div class="sosial">
+                    <button><i class="fab fa-google"></i></button>
+                    <button><i class="fab fa-facebook"></i></button>
+                </div>
+            </form>
+
+        </div>
+
+
+    </main>
+
+    {% endblock content %}

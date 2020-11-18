@@ -1,0 +1,27 @@
+// Base
+@import "./base/varibles";
+@import "./base/mixins";
+@import "./base/base";
+//Blocks
+@import "./blocks/header";
+@import "./blocks/header-link";
+@import "./blocks/header-nav";
+@import "./blocks/carousel";
+@import "./blocks/carousel-theme";
+@import "./blocks/main";
+@import "./blocks/navigation";
+@import "./blocks/info-block";
+@import "./blocks/card";
+@import "./blocks/footer";
+//Pages
+//sign-up
+@import "./pages/signup-form";
+//contact-page
+@import "./pages/contact-page";
+//simple-product-page
+@import "./pages/product";
+//compare-pages
+@import "./pages/compare";
+//account-pages
+@import "./pages/user-accounts";
+@import "./pages/account-settings";

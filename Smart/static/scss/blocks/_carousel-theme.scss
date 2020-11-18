@@ -1,0 +1,108 @@
+/**
+ * Owl Carousel v2.3.4
+ * Copyright 2013-2018 David Deutsch
+ * Licensed under: SEE LICENSE IN https://github.com/OwlCarousel2/OwlCarousel2/blob/master/LICENSE
+ */
+
+
+/*
+ * 	Default theme - Owl Carousel CSS File
+ */
+
+.owl-theme .owl-nav {
+    margin-top: 10px;
+    text-align: center;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.owl-theme .owl-nav [class*='owl-'] {
+    color: #FFF;
+    font-size: 14px;
+    margin: 5px;
+    padding: 4px 7px;
+    background: #D6D6D6;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.owl-theme .owl-nav [class*='owl-']:hover {
+    background: #869791;
+    color: #FFF;
+    text-decoration: none;
+}
+
+.owl-theme .owl-nav .disabled {
+    opacity: 0.5;
+    cursor: default;
+}
+
+.owl-carousel.owl-theme .owl-nav {
+    button.owl-prev,
+    button.owl-next {
+        display: block;
+        width: 60px;
+        height: 60px;
+        background-color: red;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 20px 21px;
+        border: 2px solid rgba(255, 255, 255, 0.5);
+        border-radius: 50%;
+        background-color: transparent;
+        &:focus {
+            outline: none;
+        }
+    }
+    button.owl-prev {
+        left: 60px;
+        background-image: url("./../img/carousel-icons/left-arrow.svg");
+    }
+    button.owl-next {
+        right: 60px;
+        background-image: url("./../img/carousel-icons/right-arrow.svg");
+    }
+}
+
+.owl-theme .owl-nav.disabled+.owl-dots {
+    margin-top: 10px;
+}
+
+.owl-theme .owl-dots {
+    text-align: center;
+    -webkit-tap-highlight-color: transparent;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 50px;
+}
+
+.owl-theme .owl-dots .owl-dot {
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    width: 48px;
+    height: 3px;
+    margin: 15px 15px;
+    display: block;
+    background-color: #ffffff;
+    -webkit-backface-visibility: visible;
+    backface-visibility: visible;
+    opacity: 0.3;
+    transition: opacity 200ms ease;
+}
+
+.owl-dot:focus {
+    outline: none;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+    opacity: 1;
+}

@@ -1,0 +1,39 @@
+.footer-nav-wrapper {
+    width: 100%;
+    height: auto;
+    background: #746d69;
+    margin-top: 30px;
+    margin: 70px auto 0;
+    text-align: center;
+    padding: 25px 0;
+}
+
+.footer-nav a {
+    color: $gray;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.footer-nav a:hover {
+    color: $hoverRed;
+    border-bottom: 2px solid $hoverRed;
+}
+
+.logo {
+    padding-top: 25px;
+    margin-bottom: 25px;
+}
+
+.hvr:hover {
+    color: $hoverRed;
+}
+
+.social i {
+    margin-right: 15px;
+    margin-bottom: 10px;
+    font-size: 40px;
+    color: #eeebeb;
+    &:hover {
+        color: $hoverRed;
+    }
+}

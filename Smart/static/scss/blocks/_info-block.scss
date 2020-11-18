@@ -1,0 +1,28 @@
+.info-block {
+    @extend %mixin-card;
+    padding: 30px 20px;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 0.5s;
+    &:hover {
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+    }
+}
+
+.info-block_title {
+    margin-bottom: 15px;
+    color: #666666;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.info-block_subtitle {
+    color: #d1d1d1;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.5;
+}
