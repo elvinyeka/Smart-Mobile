@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <main class="main-content">
+        <div class="container-form">
+            <form method="POST" action="" class="register-form ">
+                {{ form.hidden_tag() }}
+                <img src="/static/img/users/users.png" alt="">
+                <div class="sigup-input">
+                    {{ form.username(placeholder='İstifadəçi adı') }}
+                </div>
+                <div class="sigup-input">
+                    {{ form.email(placeholder='Email') }}
+                </div>
+                <div class="sigup-input">
+                    {{ form.password1(placeholder='Şifrə') }}
+                </div>
+                <div class="sigup-input">
+                    {{ form.password2(placeholder='Şifrə təkrar') }}
+                </div>
+                {{ form.submit(value='Hesab Yarat', class='signup-submit') }}
+                <div class="sosial">
+                    <button><i class="fab fa-google"></i></button>
+                    <button><i class="fab fa-facebook"></i></button>
+                </div>
+            </form>
+
+        </div>
+
+
+    </main>
+
+    {% endblock content %}
